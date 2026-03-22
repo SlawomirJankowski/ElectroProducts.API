@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ElectroProducts.API/ElectroProducts.API.csproj" />
+  <Project Path="ElectroProducts.Models/ElectroProducts.Models.csproj" />
+</Solution>
