@@ -15,6 +15,9 @@ CREATE TABLE Products (
     Category NVARCHAR(300)  NULL,
     PhotoUrl NVARCHAR(MAX)  NULL
 
+    -- Unikalny indeks na kolumnie SKU, aby zapewnić unikalność wartości
+    -- i umożliwić szybkie wyszukiwanie produktów po SKU
+    -- Dzięki temu, że SKU jest unikalne, możemy łatwo łączyć tabele Prices i Inventories z tabelą Products za pomocą klucza obcego.
     CONSTRAINT UQ_Products_SKU UNIQUE (SKU)
 );
 GO
